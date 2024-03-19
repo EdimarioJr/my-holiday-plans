@@ -22,6 +22,7 @@ export const DeletePlan = ({
 
   const handleCloseDeleteModal = () => {
     setIsDeleteModalOpen(false);
+    afterMainActionCallback();
   };
 
   useEffect(() => {

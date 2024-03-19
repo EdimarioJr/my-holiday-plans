@@ -17,7 +17,10 @@ export const EditPlan = ({ plan, afterMainActionCallback }: EditPlanProps) => {
   const [pending, startTransition] = useTransition();
 
   const handleOpenEditModal = () => setIsEditModalOpen(true);
-  const handleCloseEditModal = () => setIsEditModalOpen(false);
+  const handleCloseEditModal = () => {
+    setIsEditModalOpen(false);
+    afterMainActionCallback();
+  };
 
   const onSubmit = (value: Omit<IHolidayPlan, "id">) => {
     startTransition(async () => {
