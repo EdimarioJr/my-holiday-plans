@@ -8,6 +8,7 @@ const config = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "./@/components/**/*.{ts,tsx}",
+    "./src/stories/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   prefix: "",
   theme: {
@@ -74,7 +75,7 @@ const config = {
         "accordion-up": "accordion-up 0.2s ease-out",
       },
       gridTemplateColumns: {
-        "auto-fit-300": "repeat(auto-fit, minmax(300px, 1fr))",
+        "auto-fit-300": "repeat(auto-fit, minmax(300px, 350px))",
       },
     },
   },

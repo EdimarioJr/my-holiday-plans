@@ -27,7 +27,7 @@ export const PlanCard = ({
 }: PlanCardProps) => {
   const { title, participant, date, description, location } = plan;
   return (
-    <Card className="w-full h-[15rem] overflow-auto bg-gradient-to-r from-blue-800 to-indigo-900 border-none ">
+    <Card className="w-full min-w-[350px] h-[15rem] overflow-auto bg-gradient-to-r from-blue-800 to-indigo-900 border-none ">
       <CardHeader className="flex flex-row justify-between  w-full">
         <div className="flex flex-col gap-2">
           <CardTitle>{title}</CardTitle>

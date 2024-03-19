@@ -10,7 +10,7 @@ generator client {
 
 datasource db {
   provider = "postgresql"
-  url      = "postgres://edimario:example123@db:5432"
+  url      = env("DATABASE_URL")
 }
 
 
